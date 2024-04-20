@@ -13,7 +13,6 @@ def clean_data():
 
     df = pd.read_csv("solicitudes_credito.csv", sep=";")
     df = df.drop('Unnamed: 0', axis=1)
-
     df["sexo"] = df["sexo"].str.lower()
     df["tipo_de_emprendimiento"] = df["tipo_de_emprendimiento"].str.lower()
 
